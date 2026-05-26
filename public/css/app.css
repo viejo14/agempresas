@@ -1372,6 +1372,15 @@ html.lenis, html.lenis body {
         flex-direction: row;
         justify-content: space-around;
     }
+
+    .stat-item {
+        align-items: center;
+        text-align: center;
+    }
+
+    .stat-divider {
+        margin: 15px auto;
+    }
     
     .work-grid {
         grid-template-columns: 1fr;
@@ -1408,9 +1417,27 @@ html.lenis, html.lenis body {
     }
     
     .stats-col {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 15px;
+    }
+    
+    .stat-item {
+        flex: 1;
         align-items: center;
-        gap: 40px;
+        text-align: center;
+    }
+
+    .stat-number {
+        font-size: 2.8rem;
+    }
+
+    .stat-divider {
+        margin: 12px auto;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
     }
     
     .values-list h1 {
