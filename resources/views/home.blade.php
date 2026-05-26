@@ -227,7 +227,7 @@
                             </div>
                         </div>
                         <div class="reviews-footer">
-                            <a href="https://www.google.com/search?q=AGEMPRESAS+Opiniones" target="_blank" class="btn-google-action">
+                            <a href="javascript:void(0);" class="btn-google-action">
                                 <i class="fab fa-google"></i> Ver opiniones en Google
                             </a>
                         </div>
