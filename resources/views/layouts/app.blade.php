@@ -123,9 +123,15 @@
         </div>
         
         <!-- Copyright -->
-        <div class="footer-bottom text-center">
-            <div class="container">
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
                 <p>&copy; Copyright <strong><span>AG Empresas {{ date('Y') }}</span></strong>. Todos los derechos reservados.</p>
+                <div class="syrtix-credit">
+                    <span>Sitio web desarrollado por</span>
+                    <a href="https://syrtix.com" target="_blank">
+                        <img src="{{ asset('img/img-logo-syrtix.png') }}" alt="Syrtix.com">
+                    </a>
+                </div>
             </div>
         </div>
     </footer>

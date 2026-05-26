@@ -1125,6 +1125,48 @@ img {
     letter-spacing: 0.5px;
 }
 
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.syrtix-credit {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.syrtix-credit a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.syrtix-credit img {
+    height: 16px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.55;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.syrtix-credit a:hover img {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
 /* Botón Volver Arriba (Back to Top) */
 .back-to-top {
     position: fixed;
