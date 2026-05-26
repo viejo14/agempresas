@@ -390,4 +390,28 @@ document.addEventListener('DOMContentLoaded', () => {
         updateParallax();
     }
 
+    /* --- 11. Preloader de AG Empresas --- */
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        const startTime = Date.now();
+        const minDuration = 1800; // 1.8 segundos mínimo para disfrutar de la animación
+
+        window.addEventListener('load', () => {
+            const elapsedTime = Date.now() - startTime;
+            const remainingTime = Math.max(0, minDuration - elapsedTime);
+
+            setTimeout(() => {
+                preloader.classList.add('fade-out');
+            }, remainingTime);
+        });
+
+        // Backup de seguridad: si la carga se traba o tarda demasiado,
+        // ocultar de todas formas tras 5 segundos para no arruinar la experiencia.
+        setTimeout(() => {
+            if (!preloader.classList.contains('fade-out')) {
+                preloader.classList.add('fade-out');
+            }
+        }, 5000);
+    }
+
 });
