@@ -211,17 +211,26 @@
                     
                     <!-- Reseñas de Google -->
                     <div class="reviews-box">
-                        <h3>Reseñas de Google</h3>
-                        <div class="stars">
-                            <span class="rating-num">4.8</span> 
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-alt"></i>
-                            <span class="total-comments">/ 5 (42 comentarios)</span>
+                        <img src="{{ asset('img/logo-google.webp') }}" class="google-logo-badge" alt="Google Reviews">
+                        <h3>Opiniones en Google</h3>
+                        <div class="reviews-score-info">
+                            <span class="rating-num">4.8</span>
+                            <div class="stars-container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-alt"></i>
+                                </div>
+                                <span class="total-comments">42 opiniones en Google</span>
+                            </div>
                         </div>
-                        <p>Fuente: <a href="https://www.google.com/search?q=AGEMPRESAS+Opiniones" target="_blank">Google Reviews</a></p>
+                        <div class="reviews-footer">
+                            <a href="https://www.google.com/search?q=AGEMPRESAS+Opiniones" target="_blank" class="btn-google-action">
+                                <i class="fab fa-google"></i> Ver opiniones en Google
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
